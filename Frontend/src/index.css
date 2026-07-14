@@ -1,0 +1,56 @@
+:root {
+  /* Color tokens — verification-ledger palette */
+  --ink: #16213a;
+  --ink-soft: #2a3652;
+  --paper: #eae6dc;
+  --paper-high: #f3f0e8;
+  --seal: #b8922f;
+  --seal-dim: #8f7126;
+  --verified: #3c6e52;
+  --error: #a33b3b;
+  --text-ink: #1c2230;
+  --text-muted: #5b6373;
+  --text-on-ink: #e9e6dc;
+  --text-on-ink-muted: #9aa4bd;
+  --hairline: rgba(28, 34, 48, 0.18);
+  --hairline-on-ink: rgba(233, 230, 220, 0.22);
+
+  /* Type tokens */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text-ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

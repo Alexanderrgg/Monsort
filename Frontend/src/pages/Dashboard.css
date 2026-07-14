@@ -1,0 +1,50 @@
+.dashboard-screen {
+  min-height: 100vh;
+  background: var(--paper-high);
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1.5px solid var(--hairline);
+}
+
+.dashboard-eyebrow {
+  font-family: var(--font-mono);
+  letter-spacing: 0.14em;
+  font-size: 13px;
+  color: var(--seal-dim);
+  margin: 0;
+}
+
+.dashboard-signout {
+  background: transparent;
+  border: 1.5px solid var(--hairline);
+  padding: 8px 16px;
+  font-size: 13.5px;
+  cursor: pointer;
+  color: var(--text-ink);
+}
+
+.dashboard-signout:hover {
+  border-color: var(--ink);
+}
+
+.dashboard-body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.dashboard-body h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+.dashboard-note {
+  color: var(--text-muted);
+  font-size: 14px;
+}
